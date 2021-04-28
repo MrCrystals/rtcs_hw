@@ -3,6 +3,7 @@
 *                                    Khomenko Sergey IABO-01-19, 2021                                   *
 *                                   Real-time computing systems: lab 2                                  *
 *********************************************************************************************************/
+
 #define _CRT_SECURE_NO_WARNINGS
 
 #include "lab_2.h"
@@ -10,10 +11,6 @@
 #include <stdio.h>
 #include <math.h>
 
-/// <summary>
-/// Task 1: geometric figure
-/// My variant 29 -> variant of the task 5
-/// </summary>
 void Lab_2_1()
 {
 	double x, y;
@@ -29,10 +26,6 @@ void Lab_2_1()
 		printf("The point not falls into the area!\n");
 }
 
-/// <summary>
-/// Task 2: formula
-/// My variant 29 -> variant of the task 2
-/// </summary>
 void Lab_2_2()
 {
 	double a = -0.6, b = 5.3, z, t;

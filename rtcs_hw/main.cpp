@@ -3,11 +3,13 @@
 *                                    Khomenko Sergey IABO-01-19, 2021                                   *
 *                                Real-time computing systems: labs launcher                             *
 *********************************************************************************************************/
+
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable : 4996)
 
 #include "lab_1.h"
 #include "lab_2.h"
+#include "lab_3.h"
 
 #include <stdio.h>
 #include <conio.h>
@@ -30,6 +32,7 @@ int main()  //launcher main menu
         printf(" 12 - Lab 1: formula (5)\n\n");
         printf(" 21 - Lab 2: geometric figure (5)\n");
         printf(" 22 - Lab 2: formula (2)\n\n");
+        printf(" 31 - Lab 3: array (1)\n\n");
 
         printf(" 0 - Exit\n");
         printf("----------------------------------------------------\n>");
@@ -64,6 +67,12 @@ int main()  //launcher main menu
             copyright();
             printf("===================== LAB 2: Formula (2 variant) ====================\n");
             Lab_2_2();
+            break;
+
+        case 31:
+            copyright();
+            printf("====================== LAB 3: Array (1 variant) =====================\n");
+            Lab_3_1();
             break;
 
         default:

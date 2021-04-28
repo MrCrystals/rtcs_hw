@@ -1,22 +1,16 @@
 /********************************************************************************************************
 *                                               Coded by MCS                                            *
 *                                    Khomenko Sergey IABO-01-19, 2021                                   *
-*                                   Real-time computing systems: lab 2                                  *
+*                                   Real-time computing systems: lab 3                                  *
 *********************************************************************************************************/
 
-#ifndef LAB2
-#define LAB2
+#ifndef LAB3
+#define LAB3
 
 /// <summary>
-/// Lab 2, Task 1: Geometric figure. 
-/// My variant 29 -> variant of the task 5
+/// Lab 3, Task 1: Array. 
+/// My variant 29 -> variant of the task 1
 /// </summary>
-void Lab_2_1();
-
-/// <summary>
-/// Lab 2, Task 2: Formula. 
-/// My variant 29 -> variant of the task 2
-/// </summary>
-void Lab_2_2();
+void Lab_3_1();
 
 #endif
