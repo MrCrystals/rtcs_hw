@@ -1,4 +1,12 @@
-﻿#include "lab_1.h"
+﻿/********************************************************************************************************
+*                                               Coded by MCS                                            *
+*                                    Khomenko Sergey IABO-01-19, 2021                                   *
+*                                Real-time computing systems: labs launcher                             *
+*********************************************************************************************************/
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable : 4996)
+
+#include "lab_1.h"
 #include "lab_2.h"
 
 #include <stdio.h>
@@ -6,6 +14,7 @@
 #include <stdlib.h>
 
 void copyright();
+void clear();
 
 int main()  //launcher main menu
 {
@@ -17,52 +26,56 @@ int main()  //launcher main menu
 
         printf("------------------------MENU------------------------\n");
 
-        printf(" 1 - Lab 1\n");
-        printf("11 - Lab 1 triangle\n");
-        printf("21 - Lab 2 task 1\n");
-        printf("22 - Lab 2 task 2\n");
+        printf(" 11 - Lab 1: triangle\n");
+        printf(" 12 - Lab 1: formula (5)\n\n");
+        printf(" 21 - Lab 2: geometric figure (5)\n");
+        printf(" 22 - Lab 2: formula (2)\n\n");
 
         printf(" 0 - Exit\n");
         printf("----------------------------------------------------\n>");
 
-        scanf_s("%i", &inp);
+        scanf("%i", &inp);
 
         switch (inp)
         {
-        case 1:
-            copyright();
-            printf("========================== LAB 1 ==========================\n");
-            Lab1();
-            printf("\n======================== END LAB 1 ========================\n");
-            break;
+        case 0:
+            printf("\nGood bye.");
+            return 0;
 
         case 11:
             copyright();
-            printf("========================== LAB 1_1 ==========================\n");
-            Lab11();
-            printf("\n======================== END LAB 1_1 ========================\n");
+            printf("========================== LAB 1: Triangle ==========================\n");
+            Lab_1_1();
+            break;
+
+        case 12:
+            copyright();
+            printf("===================== LAB 1: Formula (5 variant) ====================\n");
+            Lab_1_2();
             break;
 
         case 21:
             copyright();
-            printf("========================== LAB 2_1 ==========================\n");
-            Lab21();
-            printf("\n======================== END LAB 2_1 ========================\n");
+            printf("================ LAB 2: Geometric figure (5 variant) ================\n");
+            Lab_2_1();
             break;
 
         case 22:
             copyright();
-            printf("========================== LAB 2_2 ==========================\n");
-            Lab22();
-            printf("\n======================== END LAB 2_2 ========================\n");
+            printf("===================== LAB 2: Formula (2 variant) ====================\n");
+            Lab_2_2();
             break;
 
         default:
-            printf("Wrong number!\n");
-            break;
+            printf("Wrong number!");
+            getch();
+            clear();
+            continue;
         }
-        _getch();
-        system("cls");
+
+        printf("\n============================= END TASK ==============================\n");
+        getch();
+        clear();
     }
 
     return 0;
@@ -70,6 +83,11 @@ int main()  //launcher main menu
 
 void copyright()
 {
-    system("cls");
+    clear();
     printf("Real-time computing systems labs launcher by MCS (Khomenko Sergey IABO-01-19)\n\n");
+}
+
+void clear()
+{
+    system("cls"); // for win
 }

@@ -1,30 +1,43 @@
+/********************************************************************************************************
+*                                               Coded by MCS                                            *
+*                                    Khomenko Sergey IABO-01-19, 2021                                   *
+*									Real-time computing systems: lab 1									*
+*********************************************************************************************************/
+#define _CRT_SECURE_NO_WARNINGS
+
 #include "lab_1.h"
 
 #include <stdio.h>
 #include <math.h>
 
-//lab 1 by MCS (Khomenko Sergey IABO-01-19)
-
-//my variant 29 -> variant of the task 5
-void Lab1()
-{
-	float x = 0, y = 0, t = 0;
-
-	printf("Enter Y: ");
-	scanf_s("%f", &y);
-	printf("Enter T: ");
-	scanf_s("%f", &t);
-
-	printf("\nX = %7.2f", ((8 * (cos(t)/sin(t) + 2) / (exp(t) + 2) - y*y)));
-}
-
-void Lab11()
+/// <summary>
+/// Task 1: triangle
+/// </summary>
+void Lab_1_1()
 {
 	float a, b, c, x, s;
 	printf("Enter the hypotenuse and angle of the triangle: ");
-	scanf_s("%f %f", &c, &x);
+	scanf("%f %f", &c, &x);
 	a = c * sin(x);
 	b = c * cos(x);
 	s = a * b;
-	printf("\nResult: a = % 7.2f b = % 7.2f S = % 7.2f", a, b, s);
+	printf("\nResult: a = %7.2f b = %7.2f S = %7.2f", a, b, s);
+}
+
+/// <summary>
+/// Task 2: formula
+/// My variant 29 -> variant of the task 5
+/// </summary>
+void Lab_1_2()
+{
+	float x, y = 4, t = 3;
+
+	/*printf("Enter Y: ");
+	scanf("%f", &y);
+	printf("Enter T: ");
+	scanf("%f", &t);*/
+
+	x = (8 * (cos(t) / sin(t) + 2)) / (exp(t) + 2) - pow(y, 2);
+
+	printf("\nX = %4.4f", x);
 }
