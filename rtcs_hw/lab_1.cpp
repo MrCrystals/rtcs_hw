@@ -39,5 +39,5 @@ void Lab_1_2()
 
 	x = (8 * (cos(t) / sin(t) + 2)) / (exp(t) + 2) - pow(y, 2);
 
-	printf("\nX = %4.4f", x);
+	printf("\nY = %4.4f, T = %4.4f, X = %4.4f", y, t, x);
 }
