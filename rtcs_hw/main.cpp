@@ -1,6 +1,6 @@
 ﻿/********************************************************************************************************
 *                                               Coded by MCS                                            *
-*                                    Khomenko Sergey IABO-01-19, 2021                                   *
+*                         Khomenko Sergey IABO-01-19, 2021, Visual Studio 19 (C++)                      *
 *                                Real-time computing systems: labs launcher                             *
 *********************************************************************************************************/
 
@@ -10,6 +10,7 @@
 #include "lab_1.h"
 #include "lab_2.h"
 #include "lab_3.h"
+#include "lab_4.h"
 
 #include <stdio.h>
 #include <conio.h>
@@ -33,6 +34,7 @@ int main()  //launcher main menu
         printf(" 21 - Lab 2: geometric figure (5)\n");
         printf(" 22 - Lab 2: formula (2)\n\n");
         printf(" 31 - Lab 3: array (1)\n\n");
+        printf(" 41 - Lab 4: matrix (2)\n\n");
 
         printf(" 0 - Exit\n");
         printf("----------------------------------------------------\n>");
@@ -73,6 +75,12 @@ int main()  //launcher main menu
             copyright();
             printf("====================== LAB 3: Array (1 variant) =====================\n");
             Lab_3_1();
+            break;
+
+        case 41:
+            copyright();
+            printf("====================== LAB 4: Matrix (2 variant) ====================\n");
+            Lab_4_1();
             break;
 
         default:
