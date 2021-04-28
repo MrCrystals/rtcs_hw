@@ -1,7 +1,8 @@
 /********************************************************************************************************
 *                                               Coded by MCS                                            *
-*                                    Khomenko Sergey IABO-01-19, 2021                                   *
+*                         Khomenko Sergey IABO-01-19, 2021, Visual Studio 19 (C++)                      *
 *                                   Real-time computing systems: lab 1                                  *
+*                                  (description of functions in header)                                 *
 *********************************************************************************************************/
 
 #define _CRT_SECURE_NO_WARNINGS

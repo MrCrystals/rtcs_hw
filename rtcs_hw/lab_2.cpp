@@ -1,7 +1,8 @@
 /********************************************************************************************************
 *                                               Coded by MCS                                            *
-*                                    Khomenko Sergey IABO-01-19, 2021                                   *
+*                         Khomenko Sergey IABO-01-19, 2021, Visual Studio 19 (C++)                      *
 *                                   Real-time computing systems: lab 2                                  *
+*                                  (description of functions in header)                                 *
 *********************************************************************************************************/
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -16,9 +17,9 @@ void Lab_2_1()
 	double x, y;
 
 	printf("Enter X: ");
-	scanf_s("%lf", &x);
+	scanf("%lf", &x);
 	printf("Enter Y: ");
-	scanf_s("%lf", &y);
+	scanf("%lf", &y);
 
 	if ((y <= x + 1) && (y <= -x + 1) && (y >= x - 1) && !(x < 0 && y < 0))
 		printf("The point falls into the area!\n");
