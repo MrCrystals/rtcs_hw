@@ -11,6 +11,8 @@
 #include "lab_2.h"
 #include "lab_3.h"
 #include "lab_4.h"
+#include "lab_5.h"
+#include "lab_6.h"
 
 #include <stdio.h>
 #include <conio.h>
@@ -35,6 +37,8 @@ int main()  //launcher main menu
         printf(" 22 - Lab 2: formula (2)\n\n");
         printf(" 31 - Lab 3: array (1)\n\n");
         printf(" 41 - Lab 4: matrix (2)\n\n");
+        printf(" 51 - Lab 5: array (29)\n\n");
+        printf(" 61 - Lab 6: array\n\n");
 
         printf(" 0 - Exit\n");
         printf("----------------------------------------------------\n>");
@@ -81,6 +85,18 @@ int main()  //launcher main menu
             copyright();
             printf("====================== LAB 4: Matrix (2 variant) ====================\n");
             Lab_4_1();
+            break;
+
+        case 51:
+            copyright();
+            printf("====================== LAB 5: Array (29 variant) ====================\n");
+            Lab_5_1();
+            break;
+
+        case 61:
+            copyright();
+            printf("====================== LAB 6: Array (29 variant) ====================\n");
+            Lab_6_1();
             break;
 
         default:
