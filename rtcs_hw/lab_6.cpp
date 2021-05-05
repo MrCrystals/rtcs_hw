@@ -55,9 +55,9 @@ void Lab_6_1()
 
 
 	//2
-	int la = rand() % Nmax + Nmin;
+	int la = 100;
 	int* a = (int*)calloc(la, sizeof(int));
-	int lb = rand() % Nmax + Nmin;
+	int lb = 100;
 	int* b = (int*)malloc(lb * sizeof(int));
 
 	//3
