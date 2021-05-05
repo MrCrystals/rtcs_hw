@@ -95,7 +95,7 @@ int main()  //launcher main menu
 
         case 61:
             copyright();
-            printf("====================== LAB 6: Array (29 variant) ====================\n");
+            printf("============================ LAB 6: Array ===========================\n");
             Lab_6_1();
             break;
 

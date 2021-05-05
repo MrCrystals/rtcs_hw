@@ -8,8 +8,7 @@
 #define LAB6
 
 /// <summary>
-/// Lab 6, Task 1: Array. 
-/// My variant 29 -> variant of the task 29
+/// Lab 6, Task 1: Array.
 /// </summary>
 void Lab_6_1();
 
